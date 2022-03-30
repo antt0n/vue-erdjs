@@ -14,7 +14,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import platform from "platform";
 import QRCodeDefaultHandler from "./QRCodeDefaultHandler";
 

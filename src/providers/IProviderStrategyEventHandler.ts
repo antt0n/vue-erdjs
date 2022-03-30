@@ -1,5 +1,5 @@
-import IProviderStrategy from "./IProviderStrategy";
-import {Address} from "@elrondnetwork/erdjs";
+import type IProviderStrategy from "./IProviderStrategy";
+import type {Address} from "@elrondnetwork/erdjs";
 
 interface IProviderStrategyEventHandler {
 

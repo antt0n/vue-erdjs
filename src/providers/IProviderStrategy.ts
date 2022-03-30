@@ -1,4 +1,4 @@
-import {IDappProvider} from "@elrondnetwork/erdjs";
+import type {IDappProvider} from "@elrondnetwork/erdjs";
 
 interface IProviderStrategy {
   id(): string;

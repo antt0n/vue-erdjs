@@ -3,8 +3,8 @@ import LedgerStrategy from './ledger/LedgerStrategy';
 import WebWalletStrategy from './web/WebWalletStrategy';
 import {TransactionHash, Address, ProxyProvider, ApiProvider, Transaction} from "@elrondnetwork/erdjs";
 import providersOptions, {ProviderOption} from "./config";
-import IProviderStrategyEventHandler from "./IProviderStrategyEventHandler";
-import IProviderStrategy from "./IProviderStrategy";
+import type IProviderStrategyEventHandler from "./IProviderStrategyEventHandler";
+import type IProviderStrategy from "./IProviderStrategy";
 import DefiWallet from "./defi/DefiWalletStrategy";
 import TransactionResult from "./TransactionResult";
 

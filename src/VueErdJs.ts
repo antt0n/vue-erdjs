@@ -1,29 +1,28 @@
-import { Transaction } from "@elrondnetwork/erdjs";
-import VueErdJsStore from "./VueErdJsStore";
-import Providers from "./providers/Providers";
-import Vue from "vue";
+import type { Transaction } from "@elrondnetwork/erdjs";
+import type Providers from "./providers/Providers";
+import type { App } from "vue";
 
 export default class VueErdJs {
-    private _store: VueErdJsStore;
+    private _app: App;
     private _providers: Providers;
     private _explorerUrl: string;
 
-    constructor(providers: Providers, store: VueErdJsStore, explorerUrl: string) {
-        this._store = store;
+    constructor(app: App, providers: Providers, explorerUrl: string) {
+        this._app = app;
         this._providers = providers;
         this._explorerUrl = explorerUrl;
     }
 
     get logged() {
-        return this._store.logged
+        return this._app.config.globalProperties.$erd.logged;
     }
 
     get walletAddress() {
-        return this._store.walletAddress;
+        return this._app.config.globalProperties.$erd.walletAddress;
     }
 
     get token() {
-        return this._store.token;
+        return this._app.config.globalProperties.$erd.token;
     }
 
     get obfuscatedWalletAddress() {
@@ -71,17 +70,18 @@ export default class VueErdJs {
     explorerTransactionUrl(transaction: Transaction) {
         return `${this._explorerUrl}/transactions/${transaction.getHash()}`;
     }
-
-    $on(event: string | string[], callback: Function): Vue {
+    /*
+    $on(event: string | string[], callback: Function): Vue.App {
         return this._store.$on(event, callback);
     }
 
-    $once(event: string | string[], callback: Function): Vue {
+    $once(event: string | string[], callback: Function): Vue.App {
         return this._store.$once(event, callback);
     }
 
-    $off(event?: string | string[], callback?: Function): Vue {
+    $off(event?: string | string[], callback?: Function): Vue.App {
         return this._store.$off(event, callback);
     }
+    */
 }
 

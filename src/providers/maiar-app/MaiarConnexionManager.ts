@@ -1,5 +1,5 @@
-import {WalletConnectProvider} from "@elrondnetwork/erdjs";
-import {MaiarAppOption} from "../config";
+import type {WalletConnectProvider} from "@elrondnetwork/erdjs";
+import type {MaiarAppOption} from "../config";
 
 class MaiarConnexionManager {
   private _walletConnect: WalletConnectProvider;

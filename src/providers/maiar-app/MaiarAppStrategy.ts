@@ -1,8 +1,8 @@
 import { Address, ProxyProvider, WalletConnectProvider } from "@elrondnetwork/erdjs";
 import MaiarConnexionManager from './MaiarConnexionManager'
-import {MaiarAppOption} from "../config";
-import IProviderStrategyEventHandler from "../IProviderStrategyEventHandler";
-import IProviderStrategy from "../IProviderStrategy";
+import type {MaiarAppOption} from "../config";
+import type IProviderStrategyEventHandler from "../IProviderStrategyEventHandler";
+import type IProviderStrategy from "../IProviderStrategy";
 
 class MaiarAppLoginData {
   qrCodeData: string;

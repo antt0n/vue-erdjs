@@ -1,8 +1,8 @@
 import {HWProvider} from "@elrondnetwork/erdjs";
-import IProviderStrategy from "../IProviderStrategy";
-import IProviderStrategyEventHandler from "../IProviderStrategyEventHandler";
+import type IProviderStrategy from "../IProviderStrategy";
+import type IProviderStrategyEventHandler from "../IProviderStrategyEventHandler";
 import {Address, ProxyProvider} from "@elrondnetwork/erdjs";
-import {LedgerOption} from "../config";
+import type {LedgerOption} from "../config";
 import StorageProvider from "../storage/StorageProvider";
 import dayjs from "dayjs";
 

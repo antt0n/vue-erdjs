@@ -1,6 +1,6 @@
-import {TransactionHash, TransactionStatus, IProvider, ApiProvider} from "@elrondnetwork/erdjs";
+import type {TransactionHash, TransactionStatus, IProvider, ApiProvider} from "@elrondnetwork/erdjs";
 import {TransactionWatcher} from "@elrondnetwork/erdjs/out/transactionWatcher";
-import {TransactionOnNetwork} from "@elrondnetwork/erdjs/out/transactionOnNetwork";
+import type {TransactionOnNetwork} from "@elrondnetwork/erdjs/out/transactionOnNetwork";
 
 class TransactionResult {
     private _hash: TransactionHash;

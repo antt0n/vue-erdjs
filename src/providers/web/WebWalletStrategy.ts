@@ -1,7 +1,7 @@
 import {Address, WalletProvider} from "@elrondnetwork/erdjs";
-import IProviderStrategy from "../IProviderStrategy";
-import IProviderStrategyEventHandler from "../IProviderStrategyEventHandler";
-import {WebWalletOption} from "../config";
+import type IProviderStrategy from "../IProviderStrategy";
+import type IProviderStrategyEventHandler from "../IProviderStrategyEventHandler";
+import type {WebWalletOption} from "../config";
 import StorageProvider from "../storage/StorageProvider";
 import dayjs from "dayjs";
 

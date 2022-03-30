@@ -1,7 +1,6 @@
 import qrcodeOptions from './qrcode-style';
 import QRCodeStyling from 'qr-code-styling';
-import { IQRCodeHandler } from "../../src";
-require('../assets/elrond-logo.png');
+//import ElrondLogo from '@/assets/assets/elrond-logo.png'
 
 class CustomQRCodeHandler implements IQRCodeHandler {
     private qrcode = new QRCodeStyling(Object.assign(qrcodeOptions));
